@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .a {
+            background-color: gray;
+            font-size: xx-large;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px; /* Added padding for a neat layout */
+            border: 2px solid black; /* Added border for neatness */
+            border-radius: 10px; /* Optional: Rounded corners */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for modern look */
+        }
+        .a input {
+            width: 250px;
+            height: 30px;
+            margin: 5px 0; /* Added margin for spacing */
+            border: 1px solid black; /* Neat borders for inputs */
+            border-radius: 5px; /* Rounded corners */
+            padding: 5px;
+        }
+        #i {
+            width: 25px; /* Increased width for radio buttons */
+            height: 25px; /* Increased height for radio buttons */
+            margin-right: 5px; /* Added spacing between Yes and No */
+        }
+        button {
+            display: block; /* Block layout to center it */
+            margin: 20px auto; /* Center the button horizontally */
+            width: 120px; /* Set a fixed width */
+            height: 40px; /* Set height for consistency */
+            background-color: black; /* Button color */
+            color: white; /* Text color */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Optional: Rounded corners */
+            cursor: pointer; /* Change cursor to pointer */
+            font-size: medium;
+        }
+        button:hover {
+            background-color: darkgray; /* Optional: Hover effect */
+        }
+        table {
+            margin: 0 auto; /* Center the table inside the container */
+        }
+    </style>
+</head>
+<body>
+    <h1>LOGIN FORM</h1>
+    <div class="a">
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="">Name</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Confirm</label></td>
+                    <td>
+                        <input type="radio" name="a" id="i">Yes
+                        <input type="radio" name="a" id="i">No
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
