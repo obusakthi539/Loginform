@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #555;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            padding: 2rem;
+        }
+
+        .left-section {
+            flex: 2;
+            padding-right: 1rem;
+        }
+
+        .right-section {
+            flex: 1;
+        }
+
+        .blog-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 90%; /* Adjusted width */
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-card p {
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-card a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .blog-card a:hover {
+            text-decoration: underline;
+        }
+
+        .blog-image {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .search-box, .categories {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .search-box:hover, .categories:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .categories ul {
+            list-style: none;
+        }
+
+        .categories ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .categories ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .categories ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .image-section {
+            margin-top: 1rem;
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="blog-card">
+                <img class="blog-image" src="https://via.placeholder.com/400" alt="First Blog Image">
+                <h2>First Blog</h2>
+                <p>Published,2024</p>
+                <p>It is about my technical Training in St Joseph College,Chennai</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="blog-card">
+                <img class="blog-image" src="https://via.placeholder.com/400" alt="Second Blog Image">
+                <h2>Second Blog</h2>
+                <p>Published,2024</p>
+                <p>It is about my technical Training in MKCE</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="search-box">
+                <h3>Search</h3>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">Travel</a></li>
+                </ul>
+            </div>
+
+            <div class="image-section">
+                <img src="https://via.placeholder.com/400" alt="Blog Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
